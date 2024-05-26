@@ -1,0 +1,72 @@
+main{
+    display: flex;
+    flex-direction: column;
+
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.products__card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.products__base{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addProduct{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.addProduct__form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.botoes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rodape{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .products{
+        flex-grow: 1;
+        background-color: none;
+        justify-content: left;
+        order: 0;
+    }
+    .addProduct{
+        max-width: 400px;
+        border-left: 2px solid bisque;
+        order: 1;
+    }
+    main{
+        flex-direction: row;
+        min-height: calc(100vh - 150px);
+    }
+    .products__card{
+        width: 240px;
+        flex-grow: 1;
+    }
+}

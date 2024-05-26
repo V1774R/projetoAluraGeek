@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/flexbox.css">
+    <script src="javascript/mostrarProdutos.js" type="module" defer></script>
+    <script src="javascript/cadastrarProduto.js" type="module" defer></script>
+    <script src="javascript/deletarProduto.js" type="module" defer></script>
+</head>
+<body>
+    <header class="cabecalho">
+        <h1 class="logo">V.A</h1>
+    </header>
+    <main>
+        <section class="products">
+            <!-- <h2 class="titulo">Meus Produtos</h2> -->
+<!-- 
+            <div class="products__card">
+                <img class="products__card__img" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcS-T19K1-HZXqfe4Bd59KXrGvIAPyY4vc1fqyn-gAr4yVas1tIptSlGIyebxJpnNYJX-KvOrm6m4bIZL5zOgYPsSHgvu8oyRItgmLOzNm1P-ro4xx7u0aQdwToMbgfche7JpK1k5NpoBw&usqp=CAc" alt="foto do produto exemplo">
+                <p class="products__card__nome">Nome do Produto</p>
+                <div class="products__base">
+                    <p class="products__base__preco">R$ 0,00 </p>
+                    <img src="imgs/deleteIcon.png" alt="incone deletar produto" data-icone>
+                </div>
+            </div>
+             -->
+        </section>
+
+        <section class="addProduct">
+            <h2 class="titulo">Adicionar Produto</h2>
+            <form action="#" class="addProduct__form">
+                <input type="text" placeholder="Nome..." class="campo nome">
+                <input type="number" placeholder="Valor..." class="campo valor">
+                <input type="text" placeholder="URL da Imagem..." class="campo url">
+                <div class="botoes">
+                    <input type="submit" value="Salvar" class="btn">
+                    <input type="reset" value="Limpar" class="btn btn2">
+                </div>
+                <p class="msgErro"></p>
+            </form>
+        </section>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Victor Almeida <br> &copy; Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
